@@ -1,0 +1,18 @@
+{
+  "name": "com.sparkygames.pathfinder",
+  "displayName": "Sparky Games Pathfinder",
+  "version": "1.0.0",
+  "unityRelease": "0a19",
+  "unity": "2020.2",
+  "description": "Sparky Games Pathfinder",
+  "keywords": [
+    "2d"
+  ],
+  "author": {
+    "name": "Sparky Code Studios",
+    "email": "sparkystudios@proton.me"
+  },
+  "category": "2D",
+  "dependencies": {
+  }
+}

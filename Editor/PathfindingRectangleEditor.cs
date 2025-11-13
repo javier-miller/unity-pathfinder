@@ -1,0 +1,41 @@
+using UnityEditor;
+using UnityEngine;
+
+namespace SparkyGames.Pathfinder.Editor
+{
+    #if UNITY_EDITOR
+    /// <summary>
+    /// Pathfinding Rectangle Editor
+    /// </summary>
+    /// <seealso cref="UnityEditor.Editor" />
+    [CustomEditor(typeof(PathfindingRectangle))]
+    public class PathfindingRectangleEditor : UnityEditor.Editor
+    {
+        private PathfindingRectangle _pathfinding;
+        private Vector3 lastPosition;
+
+        /// <summary>
+        /// Called when [enable].
+        /// </summary>
+        private void OnEnable()
+        {
+            _pathfinding = (PathfindingRectangle)target;
+            lastPosition = _pathfinding.transform.position;
+        }
+
+        /// <summary>
+        /// Implement this function to make a custom inspector.
+        /// </summary>
+        public override void OnInspectorGUI()
+        {
+            DrawDefaultInspector();
+
+            if (_pathfinding.transform.position != lastPosition)
+            {
+                lastPosition = _pathfinding.transform.position;
+                _pathfinding.Refresh();
+            }
+        }
+    }
+    #endif
+}
