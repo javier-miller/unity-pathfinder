@@ -58,9 +58,9 @@ namespace SparkyGames.Pathfinder
             return pathfindingSelected.FindPath(startWorldPosition, endWorldPosition, out path);
         }
 
-        public void SetActivePathfinder(Pathfinder pathfinder)
+        public void SetActivePathfinder(IPathfinding pathfinder)
         {
-            activePathfinder = pathfinder;
+            pathfindingSelected = pathfinder;
         }
 
         /// <summary>
