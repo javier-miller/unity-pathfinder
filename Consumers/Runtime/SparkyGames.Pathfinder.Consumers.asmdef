@@ -1,0 +1,16 @@
+{
+    "name": "SparkyGames.Pathfinder.Consumers",
+    "rootNamespace": "SparkyGames.Pathfinder.Consumers",
+    "references": [
+        "GUID:2972e70a537a3c04ebe57a7ca4ab7760"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

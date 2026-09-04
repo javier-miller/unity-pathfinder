@@ -1,12 +1,19 @@
 {
   "name": "com.sparkygames.pathfinder",
   "displayName": "Sparky Games Pathfinder",
-  "version": "1.0.2",
-  "unityRelease": "0a19",
-  "unity": "2020.2",
-  "description": "Sparky Games Pathfinder",
+  "version": "1.0.0",
+  "unity": "6000.0",
+  "description": "Reusable 2D grid pathfinding for point-and-click adventures and small RTS prototypes, with weighted A*, agent clearance, path scheduling, regional grid updates, formations, and local separation.",
+  "changelogUrl": "https://github.com/javier-miller/unity-pathfinder/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/javier-miller/unity-pathfinder/blob/main/LICENSE.md",
   "keywords": [
-    "2d"
+    "2d",
+    "pathfinding",
+    "navigation",
+    "grid",
+    "astar",
+    "rts",
+    "point-and-click"
   ],
   "author": {
     "name": "Sparky Code Studios",
@@ -14,5 +21,7 @@
   },
   "category": "2D",
   "dependencies": {
+    "com.unity.modules.physics2d": "1.0.0",
+    "com.unity.modules.tilemap": "1.0.0"
   }
 }
